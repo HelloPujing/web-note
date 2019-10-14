@@ -2,3 +2,4 @@
 - npm - installed automatically by nodejs
 - nvm - change node/npm version 
 - vrm - change origin of npm
+
