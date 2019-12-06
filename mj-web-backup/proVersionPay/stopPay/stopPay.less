@@ -1,0 +1,171 @@
+@import "~Styles/_global";
+
+@p-margin-left: 36px;
+@select-button-height: 26px;
+@submit-button-height: 40px;
+@p-margin-top: 20px;
+
+.stop-pay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: @z-index-tooltips;
+    .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        width: 314px;
+        background: @global-white-color;
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+            display: block;
+            background: no-repeat center / 20px auto;
+            cursor: pointer;
+            background-image: url("~@/images/1.x/btn_icon_close_bright_theme.png");
+            &:hover {
+                background-image: url("~@/images/1.x/btn_icon_close_bright_theme_h.png");
+            }
+        }
+
+        p {
+            margin-left: @p-margin-left;
+
+            &.help-us {
+                font-size: @font-small;
+                color: @font-color-secondary;
+                display: block;
+                width: 100%;
+                margin: 60px @p-margin-left 20px;
+            }
+            &.tell-me-why {
+                font-size: @font-media;
+                color: @font-color-primary;
+                display: block;
+                width: 100%;
+                font-weight: 500;
+            }
+        }
+
+        ul {
+            margin: 20px 10px 12px 36px;
+            li {
+                font-size: @font-msmall;
+                color: @font-color-primary;
+                margin-bottom: 20px;
+                height: @select-button-height;
+                line-height: @select-button-height;
+                display: block;
+                cursor: pointer;
+
+                i {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 4px;
+                    background: @font-color-focus;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+                .select-button {
+                    width: 46px;
+                    height: @select-button-height;
+                    line-height: @select-button-height;
+                    font-size: @font-xsmall;
+                    color: @global-white-color;
+                    text-align: center;
+                    margin-left: 20px;
+                    background: @color-blue;
+                    border-radius: 4px;
+                    display: none;
+                }
+
+                &:hover {
+                    color: @font-color-focus;
+                    .select-button {
+                        display: inline-block;
+                    }
+                }
+
+                .show-button {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .other-detail {
+            display: block;
+            margin-bottom: 12px;
+
+            .other {
+                width: calc(268px - 24px);
+                height: calc(164px - 24px);
+                margin: 0 auto;
+                padding: 12px;
+                font-size: @font-xsmall;
+                color: @font-color-primary;
+                border-radius: 4px;
+                background: @input-bg-color;
+                display: block;
+                border: 1px solid @global-border-color;
+                resize: none;
+
+                &::-webkit-input-placeholder {
+                    color: @font-color-hint;
+                }
+
+            }
+
+            .words {
+                font-size: @font-xsmall;
+                right: 34px;
+                bottom: 23px;
+                color: @font-color-hint;
+                display: block;
+                position: relative;
+                float: right;
+            }
+
+            .warning {
+                font-size: @font-xsmall;
+                right: 34px;
+                bottom: 23px;
+                color: @font-color-alert;
+                display: block;
+                position: relative;
+                float: right;
+            }
+        }
+
+        .submit-button {
+            width: 108px;
+            font-size: @font-msmall;
+            line-height: @submit-button-height;
+            height: @submit-button-height;
+            text-align: center;
+            color: @global-white-color;
+            margin: 0 auto;
+            display: block;
+            background: @color-blue;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+    .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(41, 49, 55, 0.2);
+    }
+}

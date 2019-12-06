@@ -1,0 +1,28 @@
+@import '../../../../app/styles/_global.less';
+
+.banner{
+  position: relative;
+  background: center center / cover repeat-x @black-body-background-color;
+
+  &[data-theme="scene"]{
+    height: 320px; // 包括nav
+    background-image: url("@{resourceHost}/resource/bg/bg_design_banner_scene.png");
+  }
+  &[data-theme="pure"]{
+    height: 226px; // 包括nav
+    background: url("@{resourceHost}/resource/bg/bg_design_banner_pure.png") center bottom / contain no-repeat #2B3038;
+  }
+  .banner-container{
+    position: absolute;
+    top: 58px; // 导航
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .banner-content-wrapper{
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

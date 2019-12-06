@@ -1,0 +1,160 @@
+@import "~Styles/_global";
+
+
+.price-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: @font-color-primary;
+  margin: 15px 12px 0;
+  white-space: nowrap;
+  .left-price {
+    display: flex;
+    align-items: center;
+    .item-price-label {
+      color: @font-color-secondary;
+      margin-right: 6px;
+      font-size: 12px;
+    }
+    //实际售价
+    .sale-price {
+      font-size: 18px;
+      margin-right: 6px;
+      font-weight: bold;
+      color: @font-color-focus;
+      .decimal-part{
+        font-size: 13px;
+      }
+    }
+    .unit {
+      margin-right: 6px;
+      font-size: 12px;
+      color: @font-color-secondary;
+    }
+    .delete-price {
+      margin-right: 6px;
+      color: @font-color-hint;
+      text-decoration: line-through;
+      font-size: 12px;
+    }
+    //废弃
+    .minus {
+      color: @font-color-rosered;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .help-icon{
+      position: relative;
+      width: 14px;
+      height: 14px;
+      display: block;
+      margin-left:6px;
+      cursor: pointer;
+      background: url('~@/images/1.x/btn_icon_original_help.png') no-repeat center / contain;
+      &:hover {
+        background: url('~@/images/1.x/btn_icon_original_help_w.png') no-repeat center / contain;
+      }
+      .tip {
+        display: none;
+        width: 194px;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 8px;
+        position: absolute;
+        top: 22px;
+        left: -100px;
+        color: #fff;
+        background: #222;
+        z-index: 1;
+        opacity: 0.8;
+        &::after {
+          content: '';
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-bottom: 8px solid #222;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          top: -6px;
+          left: 100px;
+        }
+        &:hover {
+          .answer-icon {
+            background-image: url(~@/images/1.x/btn_icon_original_help_h.png);
+          }
+        }
+      }
+    }
+    .discount-tag {
+      height: 15px;
+      line-height: 15px;
+      padding: 0 4px;
+      font-size: 12px;
+      background-color: rgb(251, 238, 242);
+      color: @font-color-rosered;
+      .border-radius;
+    }
+    .rebate-scale {
+      line-height: 16px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #E0557F;
+    }
+    .rebate-scale-tag {
+      margin-left: 6px;
+      padding: 0 4px;
+      border: 1px solid #E0547F;
+      .border-radius;
+      height: 14px;
+      line-height: 14px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #E0547F;
+    }
+  }
+  .old-tag {
+    line-height: 20px;
+    padding: 0 4px;
+    font-size: 12px;
+    background-color: #dee4ef;
+    color: @font-color-white;
+    .border-radius;
+  }
+
+}
+
+//未认证
+.unauth-guide-bar{
+  margin-top: 9px;
+  line-height: 12px;
+  font-size: 12px;
+  span:first-child {
+    color: @font-color-secondary;
+  }
+  span:nth-child(2){
+    margin-left: 6px;
+    font-weight: bold;
+    color: @font-color-primary;
+  }
+  a {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    color: @color-green;
+    font-weight: bold;
+    cursor: pointer;
+    i {
+      margin-left: 6px;
+      display: inline-block;
+      width: 7px;
+      height: 12px;
+      background: url(~@/images/2.x/icon_goto_certification.png) no-repeat center / contain;
+    }
+    &:hover {
+      color: @color-green-hover;
+      i{
+        background-image: url(~@/images/2.x/icon_goto_certification_hover.png);
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "~Styles/_global";
+
+.item-viewer {
+  .filled-style;
+  z-index: 100;
+  background-color: @black-body-background-color;
+  .content{
+    .filled-style;
+    top: 48px;
+    .main-body {
+      .filled-style;
+      padding-bottom: 24px;
+      overflow-y: scroll;
+      // 主内容
+      .booth {
+        position: relative;
+        display: flex;
+        max-width: 1582px;
+        height: calc(100% - 24px);
+        min-height: 500px;
+        .border-radius();
+        background-color: @global-white-color;
+        @media screen and (max-width: 1679px) {
+          margin: 0 48px;
+        }
+        @media screen and (min-width: 1680px) {
+          margin: auto;
+        }
+        .frame{
+          display: flex;
+          flex-grow: 1;
+        }
+        .aside{
+          flex-shrink: 0;
+          width: 320px;
+          border-left: 1px solid #f4f4f4;
+          overflow: auto;
+        }
+      }
+    }
+
+    // 相似/热门单品，一行显示
+    .one-line {
+      white-space: nowrap;
+      overflow: hidden;
+      > div {
+        margin-top: 0;
+      }
+    }
+
+    // 富文本
+    .item-rich--big {
+      max-width: 1582px;
+      @media screen and (max-width: 1679px) {
+        margin: -4px 48px 0;
+      }
+      @media screen and (min-width: 1680px) {
+        margin: -4px auto 0;
+      }
+      > div {
+        padding: 12px 0 40px;
+        width: 800px;
+        @media screen and (min-width: 1440px) {
+          width: 900px;
+        }
+      }
+    }
+  }
+}
+

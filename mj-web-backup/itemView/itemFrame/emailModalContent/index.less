@@ -1,0 +1,96 @@
+@import '~Styles/_global.less';
+
+.email-modal-content{
+  box-sizing: border-box;
+  width: 490px;
+  height: 513px;
+  font-size: 12px;
+  color: @font-color-primary;
+  header{
+    padding-left: 24px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #2A3037;
+    color: #fff;
+
+    .title{
+      display: flex;
+      align-items: center;
+      i{
+        width: 12px;
+        height: 12px;
+        background: url("~@/images/itemView/icon_mail.png") center center / contain;
+      }
+      >span{
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+
+    .close-btn{
+      width: 16px;
+      height: 16px;
+      background: url("~@/images/itemView/btn_icon_close_bright_theme.png") center center / contain;
+      cursor: pointer;
+    }
+  }
+  main{
+    section {
+      padding: 0 24px;
+    }
+    section.top-desc { // 第一段文本
+      background-color: #F7F9F9;
+      p{
+        padding: 12px 0;
+        line-height: 19px;
+      }
+    }
+    section:nth-child(2){
+      h1{
+        margin-top: 24px;
+        line-height: 16px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      >ul{
+        margin-top: 18px;
+        li{
+          display: flex;
+          align-items: center;
+          height: 12px;
+          &:before{
+            content: '';
+            margin-right: 8px;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url("~@/images/itemView/icon_tick.png") center center / contain;
+          }
+        }
+        li+li{
+          margin-top: 16px;
+        }
+      }
+      .email-input{
+        margin-top: 24px;
+      }
+      h6 {
+        margin-top: 8px;
+        line-height: 12px;
+        color: @font-color-secondary;
+      }
+    }
+  }
+  footer{
+    margin-top: 33px;
+    text-align: center;
+    .submit-btn{
+      width: 100px;
+    }
+  }
+}

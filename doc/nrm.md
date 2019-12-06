@@ -1,0 +1,18 @@
+# install
+`npm install nrm -g`
+
+# lookup
+`nrm ls`
+
+```
+npm -------- https://registry.npmjs.org/
+yarn ------- https://registry.yarnpkg.com/
+cnpm ------- http://r.cnpmjs.org/
+taobao ----- https://registry.npm.taobao.org/
+nj --------- https://registry.nodejitsu.com/
+npmMirror -- https://skimdb.npmjs.com/registry/
+edunpm ----- http://registry.enpmjs.org/
+```
+
+# use
+`nrm use`

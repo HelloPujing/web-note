@@ -1,0 +1,328 @@
+@import "~Styles/_global";
+
+.pay-pop {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(242, 242, 242, 1);
+	z-index: 999; //低于导航栏的高度
+	.top-bg {
+		height: 228px;
+		background-color: #2a3035;
+		background-image: url('@{cdnPublicPrefix}/buy_banner.jpg');
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: center;
+	}
+	.pay-body {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow-y: auto;
+	}
+	.content {
+		margin-left: auto;
+		margin-right: auto;
+		width: 820px;
+	}
+	.p-1 {
+		margin-top: 26px;
+		color: @font-color-primary;
+		font-size: 20px;
+		line-height: 1;
+	}
+	.p-2 {
+		margin-top: 12px;
+		margin-bottom: 28px;
+		color: @font-color-secondary;
+		font-size: 12px;
+	}
+	.pay-way {
+		display: flex;
+	}
+	.m {
+		position: relative;
+		height: 184px;
+		width: 182px;
+		color: @font-color-secondary;
+		background-color: #fff;
+		border-radius: 6px;
+		cursor: pointer;
+		overflow: hidden;
+		.box-shadow;
+		&:hover {
+			.box-shadow-h;
+		}
+		&.middle {
+			margin-left: 28px;
+		}
+		&.active {
+			background-color: @font-color-focus;
+			color: #fff;
+			.t-origin-price {
+				&:before {
+					border: 1px solid #fff;
+					background: #fff;
+				}
+			}
+		}
+		p {
+			margin-top: 56px;
+			text-align: center;
+			line-height: 1;
+			font-size: 36px;
+			.bold {
+				font-size: 24px;
+				font-weight: bold;
+			}
+		}
+		h3 {
+			margin-top: 36px;
+			text-align: center;
+			line-height: 1;
+			font-size: 24px;
+			font-weight: bold;
+			&.group {
+				font-size: 16px;
+			}
+		}
+		.t-year-wrap {
+			margin-top: 30px;
+			.t-price {
+				font-size: 26px;
+			}
+			.t-year-price {
+				font-size: 32px;
+			}
+		}
+		.t-origin-price {
+			position: relative;
+			display: inline-block;
+			font-weight: 500;
+			margin-left: 12px;
+			font-size: 14px;
+			i {
+				font-weight: 500;
+				font-size: 18px;
+				margin-left: 5px;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				top: 6px;
+				height: 0px;
+				border: 1px solid @font-color-secondary;
+				background: @font-color-secondary;
+				width: 52px;
+				transform:rotate(352deg);
+				-webkit-transform:rotate(352deg);
+			}
+		}
+		.recommend {
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			font-size: 12px;
+			line-height: 1;
+			span {
+				vertical-align: middle;
+			}
+		}
+		.tag-discount {
+			position: absolute;
+			top: 8px;
+			right: -24px;
+			width: 86px;
+			height: 26px;
+			color: #fff;
+			line-height: 26px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 900;
+			box-sizing: border-box;
+			transform: rotate(45deg);
+			z-index: 2;
+		}
+		.red-bg {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			height: 0;
+			width: 0;
+			border-top-right-radius: 6px;
+			border-top: 32px solid rgb(239, 108, 88);
+			border-left: 32px solid rgba(0,0,0,0);
+			border-right: 32px solid rgb(239, 108, 88);
+			border-bottom: 32px solid rgba(0,0,0,0);
+		}
+		//团购
+		.group-count {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 30px;
+			margin-top: 20px;
+			.add, .reduce {
+				display: block;
+				margin: 0 8px;
+				width: 20px;
+				height: 20px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100%;
+			}
+			.add {
+				background-image: url(~@/images/2.x/btn_icon_groupbuy_add_w.png);
+				&.active {
+					background-image: url(~@/images/2.x/btn_icon_groupbuy_add.png);
+					&:hover {
+						background-image: url(~@/images/2.x/btn_icon_groupbuy_add_h.png);
+					}
+					&.unable {
+						background-image: url(~@/images/2.x/btn_icon_groupbuy_unadd.png) !important;
+					}
+				}
+			}
+			.reduce {
+				background-image: url(~@/images/2.x/btn_icon_groupbuy_reduce_w.png);
+				&.active {
+					background-image: url(~@/images/2.x/btn_icon_groupbuy_reduce.png);
+					&:hover {
+						background-image: url(~@/images/2.x/btn_icon_groupbuy_reduce_h.png);
+					}
+					&.unable {
+						background-image: url(~@/images/2.x/btn_icon_groupbuy_unreduce.png) !important;
+					}
+				}
+			}
+			input {
+				display: block;
+				height: 24px;
+				width: 32px;
+				font-size: 24px;
+				font-weight: bold;
+				color: @font-color-focus;
+				text-align: center;
+				line-height: 20px;
+				border-radius: 2px;
+			}
+			.count {
+				display: block;
+				height: 24px;
+				width: 32px;
+				font-size: 24px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 24px;
+			}
+			.text {
+				font-size: 14px;
+				line-height: 14px;
+				width: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+
+		i.help {
+			display: inline-block;
+			margin-left: 4px;
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+			background-image: url(~@/images/1.x/btn_icon_original_help_w.png);
+			background-size: 100% 100%;
+			cursor: pointer;
+			&.active {
+				background-image: url(~@/images/1.x/btn_icon_original_help_h.png);
+			}
+		}
+	}
+	.total-money {
+		margin-top: 40px;
+		margin-bottom: 52px;
+		text-align: center;
+		font-size: 22px;
+		font-weight: bold;
+		color: @font-color-focus;
+		em {
+			font-size: 32px;
+			line-height: 32px;
+			vertical-align: bottom;
+			font-weight: bold;
+		}
+	}
+	.pay-btns {
+		display: flex;
+		justify-content: center;
+		height: 54px;
+		.wechat-pay-btn, .ali-pay-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 240px;
+			height: 54px;
+			border-radius: 54px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 54px;
+			cursor: pointer;
+			i {
+				display: block;
+				width: 28px;
+				height: 28px;
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+			p {
+				margin-left: 24px;
+			}
+		}
+		.wechat-pay-btn {
+			background-color: @color-green;
+			&:hover {
+				background-color: @color-green-hover;
+			}
+			i {
+				background-image: url(~@/images/1.x/icon_wehcat-pay.png);
+			}
+		}
+		.ali-pay-btn {
+			margin-left: 24px;
+			background-color: @color-blue;
+			&:hover {
+				background-color: @color-blue-hover;
+			}
+			i {
+				background-image: url(~@/images/1.x/icon_alipay.png);
+			}
+		}
+	}
+	.helpfull-hints {
+		text-align: center;
+		margin-top: 32px;
+		margin-bottom: 64px;
+		color: @font-color-secondary;
+		font-size: 12px;
+		line-height: 1;
+	}
+	.close-btn {
+		position: absolute;
+		top: 9px;
+		left: 9px;
+		z-index: 1;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+		background: no-repeat center / 20px auto;
+		background-image: url(~@/images/1.x/btn_icon_close_bright_theme.png);
+		&:hover {
+			background-image: url(~@/images/1.x/btn_icon_close_dark_theme_h.png);
+		}
+	}
+}

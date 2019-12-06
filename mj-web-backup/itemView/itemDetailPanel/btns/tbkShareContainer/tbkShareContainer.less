@@ -1,0 +1,60 @@
+@import '~Styles/_global.less';
+@import "../btns";
+
+//分享按钮容器
+.share-btn {
+  position: relative;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  // dark pink   #E0557F #C74A70
+  color: #FFF;
+  background-color: #E0557F;
+  border: 1px solid #E0557F;
+
+  .arrow-icon {
+    background-image: url(~@/images/2.x/icon_share_arrow.png);
+  }
+  &:hover {
+    color: #FFF;
+    background-color: #C74A70;
+    border: 1px solid #C74A70;
+    .arrow-icon {
+      background-image: url(~@/images/2.x/icon_share_arrow_h.png);
+    }
+  }
+
+}
+
+// 单品详情下短按钮
+.short{
+  margin-left: 10px;
+  display: inline-block;
+  margin-top: 0 !important;
+  height: 44px !important;
+  width: 143px;
+  // 偏差1像素
+  position: relative;
+  top: 1px;
+  &>span{
+    display: block;
+  }
+  .share-text{
+    padding-top: 7px;
+    line-height: 14px;
+    font-weight: bold;
+  }
+  .rebate-text{
+    margin-top: 4px;
+    line-height: 12px;
+    font-size: 12px;
+  }
+}
+
+// 非侧边
+.tbkLinkSharePanel{
+  right: -1px;
+  width: calc(143px * 2 + 10px); //和两个按钮总宽度一致
+}

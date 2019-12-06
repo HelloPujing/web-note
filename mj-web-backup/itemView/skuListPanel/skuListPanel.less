@@ -1,0 +1,61 @@
+@import '~Styles/_global.less';
+
+.sku-list{
+  margin-top: 20px;
+
+  h1 {
+    color: #b2c0c8;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .sku-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    // arrows
+    .prev, .next{
+      position: relative;
+      flex-shrink: 0;
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      background: url("~@/images/2.x/icon_right_default@2x.png") center center / contain no-repeat;
+      &[data-disabled='true']{
+        cursor: not-allowed;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        bottom: -15px;
+        left: -15px;
+      }
+      &:hover{
+        background-image: url("~@/images/2.x/icon_right_hover@2x.png");
+      }
+      cursor: pointer;
+    }
+    .prev{
+      transform: rotateY(180deg);
+    }
+    .next{
+    }
+    // skus
+    .sku-container-center,
+    .sku-container-left{
+      margin: 0 16px;
+      display: inline-flex;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .sku-container-center{
+      justify-content: center;
+    }
+    .sku-container-left{
+      justify-content: flex-start;
+    }
+  }
+}
+
