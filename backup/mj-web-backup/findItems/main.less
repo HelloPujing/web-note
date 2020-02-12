@@ -1,0 +1,31 @@
+
+div.find-item{
+  position: relative;
+  background: white;
+  padding: 34px 54px;
+  .stage{
+    position: relative;
+    overflow: hidden;
+    .long-list{
+      white-space: nowrap;
+      transition: transform 0.4s ease;
+    }
+  }
+}
+
+.pre,
+.next
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-29px);
+  cursor: pointer;
+}
+
+.pre{
+  left: 18px;
+}
+
+.next{
+  right: 18px
+}

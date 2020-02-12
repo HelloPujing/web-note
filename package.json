@@ -1,0 +1,20 @@
+{
+  "name": "web-note",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/HelloPujing/web-note.git",
+  "author": "pujing <pujing@imeijian.cn>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "lerna run test",
+    "test-common": "lerna run test --scope=@pupuu/common",
+    "test-common-and-server": "lerna run test --scope={@pupuu/common,@pupuu/server}",
+    "new-version": "lerna version"
+  },
+  "devDependencies": {
+    "lerna": "^3.19.0"
+  }
+}

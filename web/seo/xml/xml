@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<urlset content_method="full">
+<!-- urlset，urlset用来标记整个文档的开头。必须字段，必须且只能出现1次 -->
+<!-- 属性content_method，XML全量、增量还是删除，可选，类型为字符串，有效值为：full、inc、dec -->
+	<url>
+	<!-- url，url标记每条信息的开始和结束。可省字段，最多出现50000次 -->
+		<loc>http://baidu.com/</loc>
+		<!-- loc，该条数据的存放地址。必须字段，必须且只能出现1次，类型为URL地址，最小长度1个字符	最大长度256个字符	必须符合正则表达式(https?://)(.+) -->
+		<lastmod>2013-01-01</lastmod>
+		<!-- lastmod，指该条数据的最新一次更新时间。可省字段，最多出现1次，类型为日期或日期时间，格式为YYYY-MM-DD的日期或者格式为YYYY-MM-DDThh:mm:ss的日期时间（请注意日期与时间之间以“T”分隔） -->
+		<changefreq>always</changefreq>
+		<!-- changefreq，指该条数据的更新频率。可省字段，最多出现1次，类型为字符串，有效值为：always、hourly、daily、weekly、monthly、yearly、never -->
+		<priority>1.0</priority>
+		<!-- priority，用来指定此链接相对于其他链接的优先权比值，此值定于0.0-1.0之间。可省字段，最多出现1次，类型为小数，最小值为0.0（包含）	最大值为1.0（包含） -->
+		<data>
+		<!-- data，。必须字段，必须且只能出现1次 -->
+			<display>
+			<!-- display，。必须字段，必须且只能出现1次 -->
+				<workId>7551046</workId>
+				<!-- workId: 文章id，文章站内的唯一标识ID。必须字段，必须且只能出现1次，类型为字符串 -->
+				<url>http://www.smzdm.com/p/7551046/</url>
+				<!-- url: pc页面链接，。可省字段，最多出现1次，类型为URL地址 -->
+				<wapUrl>http://m.smzdm.com/p/7551046/</wapUrl>
+				<!-- wapUrl: 移动wap页面链接，请同时将此链接填写至 loc 字段中。必须字段，必须且只能出现1次，类型为URL地址 -->
+				<headline>SONY 索尼 MDR-XB950N1 无线蓝牙降噪耳机</headline>
+				<!-- headline: 文章标题，。必须字段，必须且只能出现1次，类型为字符串 -->
+				<datePublished>2017-07-19T09:03:10</datePublished>
+				<!-- datePublished:  文章的发布日期，。必须字段，必须且只能出现1次，类型为日期或日期时间，格式为YYYY-MM-DD的日期或者格式为YYYY-MM-DDThh:mm:ss的日期时间（请注意日期与时间之间以“T”分隔） -->
+				<dateModified>2017-07-19T09:59:10</dateModified>
+				<!-- dateModified: 更新时间，优惠信息的更新时间。必须字段，必须且只能出现1次，类型为日期或日期时间，格式为YYYY-MM-DD的日期或者格式为YYYY-MM-DDThh:mm:ss的日期时间（请注意日期与时间之间以“T”分隔） -->
+				<provider>
+				<!-- provider: 文章出处，。必须字段，必须且只能出现1次 -->
+					<brand>什么值得买</brand>
+					<!-- brand: 出处，。必须字段，必须且只能出现1次，类型为字符串 -->
+				</provider>
+				<author>
+				<!-- author: 作者信息，。必须字段，必须且只能出现1次 -->
+					<name>水滴石穿</name>
+					<!-- name: 作者名称，。必须字段，必须且只能出现1次，类型为字符串 -->
+					<image>
+					<!-- image: 作者头像，。可省字段，最多出现1次 -->
+						<contentUrl>http://avatarimg.smzdm.com/default/8333154356/58cb9c5cb5731-middle.jpg</contentUrl>
+						<!-- contentUrl: 作者头像Url，。必须字段，必须且只能出现1次，类型为URL地址 -->
+						<height>200</height>
+						<!-- height: 图片高度，。可省字段，最多出现1次，类型为整数 -->
+						<width>200</width>
+						<!-- width: 图片宽度，。可省字段，最多出现1次，类型为整数 -->
+						<description>老铁没毛病</description>
+						<!-- description: 头像描述，。可省字段，最多出现1次，类型为字符串 -->
+					</image>
+					<tag>用户</tag>
+					<!-- tag: 作者类型，。必须字段，必须且只能出现1次，类型为字符串，有效值为：编辑、用户、商城 -->
+					<fansCount>48</fansCount>
+					<!-- fansCount: 作者粉丝数，。可省字段，最多出现1次，类型为整数 -->
+					<articleCount>623</articleCount>
+					<!-- articleCount: 作者发布的文章数量，。可省字段，最多出现1次，类型为整数 -->
+				</author>
+				<thumbnailUrl>http://tp-y.zdmimg.com/201707/19/5932585c9a6379157.jpg_d250.jpg</thumbnailUrl>
+				<!-- thumbnailUrl: 封面图片url，高清大图，宽不小于250px，高不小于250px，去水印，可以提交多个。必须字段，最少出现1次 且最多出现10次，类型为URL地址 -->
+				<paragraph>
+				<!-- paragraph: 正文段落，将全文按正文元素段落依次提交paragraph，一篇文章如有多个段落则提交多个paragraph。必须字段，最少出现1次 且不限制最多出现次数 -->
+					<contentType>text</contentType>
+					<!-- contentType: 段落内容类型，可以是文字（text），可以是图片（image）。必须字段，必须且只能出现1次，类型为字符串 -->
+					<text>AI主动降噪，可调节低音，蓝牙+NFC+LDAC，约22小时续航。 索尼 MDR-XB950N1蓝牙降噪耳机是MDR-XB950的降噪版本，在体积上要比无线版本稍大，但同样采用金属头梁结构，并且采用方便收纳的转轴设计。耳罩外侧也拥有BASS EFFECT按键，按下后，低频更为深沉，另外MDR-XB950N1配备40mm EXTRA BASS驱动单元，可以提供更有力的低音效果。MDR-XB950N1配备有自动AI降噪技术，拥有机场、火车汽车、办公室三种预设模式，其支持蓝牙4.1版本，支持无线音乐播放和免提通话功能，同时一贯支持NFC快速配对功能。MDR-XB950N1可以提供长达22小时的音乐播放时间以及通话时间（且在充电1小时后可使用约3小时）。  网易考拉海购目前售价1299元包邮，可领用100元优惠券做到1199元到手，持平618期间售价。</text>
+					<!-- text: 段落正文内容，。可省字段，最多出现1次，类型为字符串 -->
+					<image>
+					<!-- image: 段落配图，。可省字段，最多出现1次 -->
+						<contentUrl>http://y.zdmimg.com/201707/19/596eaf87df0524915.jpg</contentUrl>
+						<!-- contentUrl: 图片地址，。必须字段，必须且只能出现1次，类型为字符串 -->
+						<height>300</height>
+						<!-- height: 图片高度，。可省字段，最多出现1次，类型为整数 -->
+						<width>400</width>
+						<!-- width: 图片宽度，。可省字段，最多出现1次，类型为整数 -->
+						<description>订单截图</description>
+						<!-- description: 图片描述，。可省字段，最多出现1次，类型为字符串 -->
+					</image>
+				</paragraph>
+				<keywords>史上最低、新品、海淘、白菜价、满减、秒杀、团购等</keywords>
+				<!-- keywords: 优惠标签，多个标签请提交多个keywords字段。必须字段，最少出现1次 且不限制最多出现次数，类型为字符串 -->
+				<associatedProduct>
+				<!-- associatedProduct: 商品信息，（尽量填全，可优化检索效果）product标记一个商品信息的开始和结束，一篇文章中提及多个商品，则填写多个product。必须字段，最少出现1次 且不限制最多出现次数 -->
+					<category>优惠涉及的商品领域，，最少出现1次 最多出现1次，类型为字符串，有效值为：手机数码、电脑办公、家用电器、美妆个护、家居家装、母婴玩具、服装服饰、运动户外、鞋靴箱包、珠宝钟表、图书音像、宠物用品、汽车用品、食品饮料、医药保健、计生情趣、其他</category>
+					<!-- category: 商品一级分类，。可省字段，最多出现1次，类型为字符串 -->
+					<subCategory>蓝牙耳机</subCategory>
+					<!-- subCategory: 商品二级分类，。可省字段，最多出现1次，类型为字符串 -->
+					<tag>海淘</tag>
+					<!-- tag: 商品标签，多个商品标签请提交多个tag字段。可省字段，不限制最多出现次数，类型为字符串 -->
+					<brand>SONY/索尼</brand>
+					<!-- brand: 商品品牌，。可省字段，最多出现1次，类型为字符串 -->
+					<spu>MDR-100ABN SONY无线蓝牙降噪立体声耳机</spu>
+					<!-- spu: 商品名称，。可省字段，最多出现1次，类型为字符串 -->
+					<image>
+					<!-- image: 商品配图，。可省字段，最多出现1次 -->
+						<contentUrl>http://tp-y.zdmimg.com/201707/19/5932585c9a6379157.jpg_d250.jpg</contentUrl>
+						<!-- contentUrl: 产品图片Url，。必须字段，必须且只能出现1次，类型为URL地址 -->
+						<height>300</height>
+						<!-- height: 图片高度，。可省字段，最多出现1次，类型为整数 -->
+						<width>300</width>
+						<!-- width: 图片宽度，。可省字段，最多出现1次，类型为整数 -->
+						<description>一旦拥有别无所求</description>
+						<!-- description: 图片描述，。可省字段，最多出现1次，类型为字符串 -->
+					</image>
+					<offers>
+					<!-- offers: 特价信息，。必须字段，最少出现1次 且不限制最多出现次数 -->
+						<seller>
+						<!-- seller: 卖家，。必须字段，必须且只能出现1次 -->
+							<name>天猫</name>
+							<!-- name: 卖家名称，。必须字段，必须且只能出现1次，类型为字符串 -->
+						</seller>
+						<pricespecification>
+						<!-- pricespecification: 价格说明，。必须字段，必须且只能出现1次 -->
+							<url>http://m.kaola.com/product/1488014.html</url>
+							<!-- url: 购买链接，请填商城的wap站购买链接	。必须字段，必须且只能出现1次，类型为URL地址 -->
+							<description>1199元包邮（用券）</description>
+							<!-- description: 优惠亮点，此优惠信息的最大亮点	。必须字段，必须且只能出现1次，类型为字符串 -->
+							<validThrough>2017-07-25T00:00:00</validThrough>
+							<!-- validThrough: 过期时间，优惠信息失效的时间。可省字段，最多出现1次，类型为日期时间，格式为YYYY-MM-DDThh:mm:ss，请注意日期与时间之间以“T”分隔 -->
+							<originPrice>1599</originPrice>
+							<!-- originPrice: 商品原价，商品价格商品原价。可省字段，最多出现1次，类型为小数 -->
+							<price>1199</price>
+							<!-- price: 优惠后价格，优惠后的价格。可省字段，最多出现1次，类型为小数 -->
+							<priceCurrency>人民币</priceCurrency>
+							<!-- priceCurrency: 货币单位，货币单位，例如：人民币、欧元、美元、英镑、日元。可省字段，最多出现1次，类型为字符串 -->
+						</pricespecification>
+					</offers>
+				</associatedProduct>
+				<scanCount>0</scanCount>
+				<!-- scanCount: 阅读量，。必须字段，必须且只能出现1次，类型为整数 -->
+				<thumbupCount>0</thumbupCount>
+				<!-- thumbupCount: 点赞数，。必须字段，必须且只能出现1次，类型为整数 -->
+				<thumbdownCount>0</thumbdownCount>
+				<!-- thumbdownCount: 点踩数，。必须字段，必须且只能出现1次，类型为整数 -->
+				<commentCount>0</commentCount>
+				<!-- commentCount: 评论数，。必须字段，必须且只能出现1次，类型为整数 -->
+				<shareCount>0</shareCount>
+				<!-- shareCount: 分享数，。必须字段，必须且只能出现1次，类型为整数 -->
+				<collectCount>0</collectCount>
+				<!-- collectCount: 收藏数，。必须字段，必须且只能出现1次，类型为整数 -->
+			</display>
+		</data>
+	</url>
+</urlset>

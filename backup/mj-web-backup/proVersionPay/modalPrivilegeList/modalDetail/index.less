@@ -1,0 +1,95 @@
+@import "~Styles/_global";
+
+.profession-introduce {
+  width: 880px;
+  height: 560px;
+  padding: 5px;
+  box-sizing: border-box;
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 646px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 6px;
+      font-size: 20px;
+      line-height: 1;
+      color: @font-color-focus;
+      font-weight: bold;
+    }
+
+    p {
+      &:last-of-type {
+        margin-bottom: 18px;
+      }
+
+      font-size: 14px;
+      line-height: 26px;
+      color: @font-color-primary;
+    }
+  }
+
+  .next-btn, .prev-btn {
+    position: absolute;
+    top: 50%;
+    .transform(translateY(-50%));
+    width: 44px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 34px;
+    background-color: rgba(178, 192, 200, .15);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .next-btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    right: 0;
+    background-image: url(~@/images/1.x/btn_icon_arrow_right.png);
+
+    &:hover {
+      background-image: url(~@/images/1.x/btn_icon_arrow_right_h.png);
+    }
+
+  }
+
+  .prev-btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left: 0;
+    background-image: url(~@/images/1.x/btn_icon_arrow_left.png);
+
+    &:hover {
+      background-image: url(~@/images/1.x/btn_icon_arrow_left_h.png);
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: no-repeat center / 20px auto;
+    background-image: url(~@/images/1.x/btn_icon_close_bright_theme.png);
+
+    &:hover {
+      background-image: url(~@/images/1.x/btn_icon_close_bright_theme_h.png);
+    }
+  }
+
+  .video-wrapper {
+    height: 354px;
+    width: 100%;
+  }
+
+}

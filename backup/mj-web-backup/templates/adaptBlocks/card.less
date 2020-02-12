@@ -1,0 +1,62 @@
+@import '~Styles/_global.less';
+
+// 容器，适配
+.card-wrapper {
+  position: relative;
+  display: inline-block;
+  .adapter();
+}
+
+// 主内容
+figure {
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  font-size: 0;
+
+  img{
+    display: block;
+    background: no-repeat center / cover #ddd;
+    &:before{
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 50%; // h:w - 1:2
+    }
+  }
+  figcaption {
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #eee;
+    p{
+      font-weight: bold;
+      color: @font-color-primary;
+    }
+    p:first-child {
+      font-size: 18px;
+    }
+    p:nth-child(2) {
+      font-size: 14px;
+    }
+  }
+}
+
+// 适配
+.adapter{
+  .gird_media(@n, @gap: 24px) {
+    margin-right: @gap;
+    width: calc((100% - @gap * @n) / @n) !important;
+  }
+  @media screen and (min-width: 1920px) {
+    .gird_media(4);
+  }
+  @media screen and (min-width: 1680px) and (max-width: 1919px) {
+    .gird_media(3);
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1679px) {
+    .gird_media(3);
+  }
+  @media screen and (max-width: 1279px) {
+    .gird_media(3);
+  }
+}
