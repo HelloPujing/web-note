@@ -33,6 +33,12 @@
 - loader指定为babel-loader
 - .babelrc配置presets
 
-# css-loader / style-loader
+# 样式loader
 - 预处理语言less sass
-- post-css-loader
+
+# style-loader
+- 向Dom载入style标签
+- 串联的最后一步（第一个）
+- 注意浏览器中才能看到(js注入)，打包后的html中没有
+
+# post-css-loader

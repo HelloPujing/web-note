@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve(srcPath, './index'),
   output: {
     path: distPath,
-    filename: 'js/[name].js'
+    filename: 'js/[name].bundle.js'
   },
   module: {
     rules: [
@@ -18,28 +18,30 @@ module.exports = {
         include: srcPath,
         loader: 'babel-loader'
       },
-      {
-        test: /\.css$/,
-        exclude: [/node_modules/, path.resolve(srcPath, './style')],
-        include: srcPath,
-        loader: 'css-loader'
-      },
+      // {
+      //   test: /\.css$/,
+      //   exclude: [/node_modules/, path.resolve(srcPath, './style')],
+      //   include: srcPath,
+      //   loader: 'css-loader'
+      // },
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        include: path.resolve(srcPath, 'style'),
+        include: srcPath,
         // loader: 'style-loader!css-loader,post-css-loader'
         loaders: [
           'style-loader',
-          'css-loader',
-          'post-css-loader'
+          'css-loader'
+          // 'postcss-loader'
         ]
       }
     ]
   },
   plugins: [
     new htmlWebpackPlugin({
-      template: path.resolve(srcPath, './index.html')
+      filename: 'index.html',
+      template: path.resolve(srcPath, 'index.html'),
+      inject: 'body'
     })
   ]
 };

@@ -1,4 +1,5 @@
-body {
-    margin: 0;
-    padding: 0;
+.layer {
+    width: 600px;
+    height: 200px;
+    background-color: #2f58aa;
 }
