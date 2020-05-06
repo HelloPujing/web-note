@@ -1,0 +1,64 @@
+@import '~@src/styles/global.less';
+
+ul.group-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 22px 3px;
+    font-size: 0;
+
+    li{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: @font-color-secondary;
+        line-height: 12px;
+        font-size: 12px;
+        &:hover{
+            color: @font-color-primary;
+            cursor: pointer;
+        }
+        >i{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: no-repeat center / contain;
+        }
+        span{
+            margin-top: 6px;
+        }
+    }
+
+    li.send-info-btn, li.more-btn {
+        position: relative;
+    }
+
+    li.chat-btn{
+
+    }
+
+    li.send-info-btn{
+        i{
+            background-image: url(~@src/images/1.x/btn_icon_send_info.png);
+        }
+        &:hover i{
+            background-image: url(~@src/images/1.x/btn_icon_send_info_h.png);
+        }
+    }
+
+    li.collect-btn{
+        & :global(.collectButton)::after {
+            left:5px !important;
+        }
+    }
+
+    li.more-btn{
+        i{
+            background-image: url(~@src/images/1.x/btn_icon_more_3.png);
+        }
+        &:hover i{
+            background-image: url(~@src/images/1.x/btn_icon_more_3_h.png);
+        }
+    }
+
+}

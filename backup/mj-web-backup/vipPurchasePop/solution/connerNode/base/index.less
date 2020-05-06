@@ -1,0 +1,35 @@
+@import '~@src/styles/global.less';
+
+
+// 左上角权益
+.base-tag {
+  position: absolute;
+  top: -14px;
+  right: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:28px;
+  padding: 0 9px;
+  line-height:30px;
+  background:#E0557F;
+  border-radius:0 8px 0 8px;
+  font-size: 14px;
+  color: #fff;
+
+  &.active{
+    right: -2px;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+
+  .iconfont-help {
+    margin-left: 4px;
+    vertical-align: middle;
+    color: #fff;
+  }
+}
+
+

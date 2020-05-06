@@ -2,7 +2,10 @@
   "name": "web-note",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/HelloPujing/web-note.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloPujing/web-note.git"
+  },
   "author": "pujing <pujing@imeijian.cn>",
   "license": "MIT",
   "workspaces": [
@@ -16,5 +19,17 @@
   },
   "devDependencies": {
     "lerna": "^3.19.0"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/HelloPujing/web-note/issues"
+  },
+  "homepage": "https://github.com/HelloPujing/web-note#readme",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.24",
+    "husky": "^4.2.2"
   }
 }

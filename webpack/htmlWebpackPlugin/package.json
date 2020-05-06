@@ -1,0 +1,16 @@
+{
+  "name": "htmlWebpackPlugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack --mode development"
+  },
+  "keywords": [],
+  "author": "PuJing",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.2.0",
+    "webpack": "^4.42.1"
+  }
+}

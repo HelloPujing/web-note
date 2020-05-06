@@ -1,0 +1,15 @@
+{
+  "name": "test-dayjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "PuJing",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.8.24"
+  }
+}

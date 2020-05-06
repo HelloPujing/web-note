@@ -1,0 +1,15 @@
+@import '~@src/styles/global.less';
+
+
+
+.btn-with-colors(
+  @fontColor, //字色
+  @bgColor, //背景色
+  @bgColorHover //悬浮背景色
+) {
+  color: @fontColor;
+  background-color: @bgColor;
+  &:hover {
+    background-color: @bgColorHover;
+  }
+}

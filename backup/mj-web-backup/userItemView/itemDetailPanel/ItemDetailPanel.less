@@ -1,0 +1,32 @@
+@import '~@src/styles/global';
+
+.item-detail {
+  padding: 22px 0 18px;
+  z-index: 1;
+  .red-packet-bar{
+    margin: 13px 12px 0;
+  }
+  .red-packet-label {
+    color: @font-color-secondary;
+    margin-right: 15px;
+    font-size: 12px;
+    vertical-align: top;
+  }
+}
+
+//按钮区块
+.btns-wrapper {
+  margin: 18px 12px 0;
+  // 按钮之间
+  > div {
+    margin-top: 12px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  // 防止短按钮换行
+  white-space: nowrap;
+}

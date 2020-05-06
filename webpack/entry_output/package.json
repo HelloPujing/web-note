@@ -1,0 +1,14 @@
+{
+  "name": "entry_output",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack --mode development --color --display-module"
+  },
+  "author": "PuJing",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.42.1"
+  }
+}
