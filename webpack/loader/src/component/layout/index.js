@@ -1,5 +1,5 @@
 // import tpl from './index.html';
-import './index.css';
+import './index.less';
 
 const Layout = () => {
   return {

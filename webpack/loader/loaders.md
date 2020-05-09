@@ -27,18 +27,25 @@
 |post-css-loader|加浏览器前缀|-|
 
 
-# babel-loader
+# 【js】 babel-loader
 - babel官网，看setup，选webpack查看
 - 安装 babel-loader, @babel/core, @babel/preset-env
 - loader指定为babel-loader
 - .babelrc配置presets
 
-# 样式loader
-- 预处理语言less sass
+# 【样式】 css-loader
+- config
+    - importLoaders = 1
 
-# style-loader
+# 【样式】style-loader
 - 向Dom载入style标签
 - 串联的最后一步（第一个）
 - 注意浏览器中才能看到(js注入)，打包后的html中没有
+- config
 
-# post-css-loader
+# 【样式】post-css-loader
+- config
+- plugins
+    - autoprefixer 
+
+# 【样式】less-loader

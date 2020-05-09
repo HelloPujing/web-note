@@ -18,23 +18,36 @@ module.exports = {
         include: srcPath,
         loader: 'babel-loader'
       },
-      // {
-      //   test: /\.css$/,
-      //   exclude: [/node_modules/, path.resolve(srcPath, './style')],
-      //   include: srcPath,
-      //   loader: 'css-loader'
-      // },
       {
         test: /\.css$/,
         exclude: /node_modules/,
         include: srcPath,
         // loader: 'style-loader!css-loader,post-css-loader'
-        loaders: [
+        use: [
           'style-loader',
-          'css-loader'
-          // 'postcss-loader'
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss', // 为了支持下边用require
+              plugins: [
+                require('autoprefixer') // todo 这个不行啊！
+              ]
+            }
+          }
         ]
-      }
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        include: srcPath,
+        use: [
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+          // {loader: 'postcss-loader'},
+          {loader: 'less-loader'}
+        ]
+      },
     ]
   },
   plugins: [
