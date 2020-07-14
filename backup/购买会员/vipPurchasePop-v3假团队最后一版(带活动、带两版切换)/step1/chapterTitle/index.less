@@ -1,0 +1,29 @@
+@import '~@src/styles/global.less';
+
+.title{
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3B3B3B;
+  font-size: 36px;
+  font-weight: bold;
+  white-space: nowrap;
+  >span {
+    margin: 0 24px;
+  }
+  &:before{
+    .decoration-line;
+    transform: rotate(180deg);
+  }
+  &:after{
+    .decoration-line;
+  }
+  .decoration-line{
+    content: '';
+    width: 221px;
+    height: 14px;
+    background: url("@{resourceHost}/resource/vip/decoration_line.png") center center / cover no-repeat;
+  }
+}

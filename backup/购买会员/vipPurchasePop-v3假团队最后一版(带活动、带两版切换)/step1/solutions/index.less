@@ -1,0 +1,34 @@
+@import '~@src/styles/global.less';
+
+.loading {
+  margin-top: 45px;
+}
+
+.solutions{
+  // 标题
+  >h1{
+    margin-top: 52px;
+    text-align: center;
+    color: @font-color-primary;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  // 方案：个人/团体模块
+  .solutions-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+// -------------活动相关---------
+.solutions{
+  &.activity1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 355px;
+  }
+}

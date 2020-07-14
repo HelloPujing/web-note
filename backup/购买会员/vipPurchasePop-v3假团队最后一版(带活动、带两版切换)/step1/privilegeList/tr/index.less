@@ -1,0 +1,111 @@
+@import '~@src/styles/global.less';
+
+@member-border-size: 2px;
+
+.prof-li {
+  display: flex;
+  &:first-child{
+    margin-top: 0;
+  }
+  .l {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+    height: 46px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .l-1 {
+    border-left: 1px solid #D2D2D2;
+    color: @font-color-primary;
+  }
+  .l-2 {
+    border-left: @member-border-size solid #DDBA7F;
+    border-right: @member-border-size solid #DDBA7F;
+    color: #513300;
+  }
+  .l-3 {
+    border-right: 1px solid #D2D2D2;
+    color: @font-color-secondary;
+  }
+}
+
+ // 适配
+.prof-li{
+  &:first-child{
+    .l-1, .l-3{
+      border-top: 1px solid #D2D2D2;
+    }
+    .l-2{
+      border-top: 1px solid #DDBA7F;
+    }
+  }
+  &:nth-child(odd){
+    .l-1, .l-3{
+      background: #F6F6F6;
+    }
+    .l-2{
+      background: #F8EFD9;
+    }
+  }
+  &:nth-child(even){
+    .l-1, .l-3{
+      background: #fff;
+    }
+    .l-2{
+      background: #FFF8E9;
+    }
+  }
+  &:last-child{
+    .l-1, .l-3{
+      border-bottom: 1px solid #D2D2D2;
+    }
+    .l-2{
+      border-bottom: @member-border-size solid #DDBA7F;
+    }
+  }
+}
+
+// icons
+
+.prof-li{
+  i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+  }
+  i.link {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    background-image: url(~@src/images/1.x/btn_icon_detail_link.png);
+    &:hover {
+      background-image: url(~@src/images/1.x/btn_icon_detail_link_h.png);
+    }
+  }
+}
+
+.iconfont_right{
+  color: #513300;
+  &:hover{
+    color: #513300;
+  }
+}
+
+.iconfont_wrong{
+  color: #7E8E98;
+  &:hover{
+    color: #7E8E98;
+  }
+}
+

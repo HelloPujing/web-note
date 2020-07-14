@@ -1,0 +1,61 @@
+.member-activity-privilege{
+  margin-top: 56px;
+
+  .blocks-wrapper{
+    margin: 0 auto;
+    width: 683px;
+
+    // 块
+    .privilege-block{
+      margin-top: 30px;
+      position: relative;
+      display: inline-block;
+      width: 310px;
+      height: 160px;
+      border-radius:8px;
+      background:linear-gradient(140deg,rgba(250,240,213,1) 0%,rgba(225,194,133,1) 100%);
+      padding-top: 30px;
+      padding-left: 30px;
+      color:#513300;
+      box-sizing: border-box;
+      >h6 {
+        line-height:24px;
+        font-size:24px;
+        font-weight:500;
+      }
+      >p {
+        margin-top: 9px;
+        font-size:17px;
+        line-height:20px;
+      }
+      >.img{
+        position: absolute;
+        right: 28px;
+        bottom: 18px;
+      }
+      &:nth-child(2n){
+        margin-left: 63px;
+      }
+      &:nth-child(1) >.img{
+        width: 60px;
+        height: 54px;
+        background: url("@{resourceHost}/resource/vip/icon_activity_privilege_1.png") center center / contain no-repeat;
+      }
+      &:nth-child(2) >.img{
+        width: 60px;
+        height: 61px;
+        background: url("@{resourceHost}/resource/vip/icon_activity_privilege_2.png") center center / contain no-repeat;
+      }
+      &:nth-child(3) >.img{
+        width: 60px;
+        height: 65px;
+        background: url("@{resourceHost}/resource/vip/icon_activity_privilege_3.png") center center / contain no-repeat;
+      }
+      &:nth-child(4) >.img{
+        width: 60px;
+        height: 74px;
+        background: url("@{resourceHost}/resource/vip/icon_activity_privilege_4.png") center center / contain no-repeat;
+      }
+    }
+  }
+}

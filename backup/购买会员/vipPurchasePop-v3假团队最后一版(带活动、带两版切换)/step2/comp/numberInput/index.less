@@ -1,0 +1,39 @@
+@import '~@src/styles/global.less';
+
+.group-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 84px;
+  height: 28px;
+  border: 1px solid @font-color-secondary;
+  border-radius: 4px;
+  padding: 0 6px;
+
+  >input {
+    display: block;
+    font-size: 16px;
+    color: @font-color-secondary;
+    text-align: center;
+    line-height: 22px;
+    width: 30px;
+  }
+}
+
+
+.group-count-btn{
+  display: inline-block;
+  color: @font-color-secondary;
+  &:hover{
+    color: @font-color-primary;
+    cursor: pointer;
+  }
+}
+
+.group-count-btn-disabled{
+  color: @font-color-hint;
+  &:hover{
+    color: @font-color-hint;
+  }
+}

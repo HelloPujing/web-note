@@ -1,0 +1,71 @@
+@import "~@src/styles/global";
+
+.privilege {
+  margin: 58px auto;
+  padding: 45px 40px;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 1115px;
+
+  .table {
+    margin-top: 30px;
+    width: 1035px;
+
+    .table-head {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      color: @font-color-secondary;
+      font-weight: bold;
+      font-size: 26px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 345px;
+        height: 96px;
+      }
+      .s-1,
+      .s-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >i {
+          margin-right: 8px;
+        }
+      }
+      .s-1 {
+        border-top: 1px solid #D2D2D2;
+        border-left: 1px solid #D2D2D2;
+      }
+      .s-2 {
+        height: 110px;
+        border-top: 2px solid #DDBA7F;
+        border-left: 2px solid #DDBA7F;
+        border-right: 2px solid #DDBA7F;
+        color: #513300;
+        > i{
+          margin-right: 8px;
+          width: 35px;
+          height: 39px;
+          background: url("@{resourceHost}/resource/vip/icon_member_78.png") center center / cover no-repeat;
+        }
+      }
+      .s-3{
+        border-top: 1px solid #D2D2D2;
+        border-right: 1px solid #D2D2D2;
+        > i{
+          margin-right: 8px;
+          width: 40px;
+          height: 30px;
+          background: url("@{resourceHost}/resource/vip/icon_diamond.png") center center / cover no-repeat;
+        }
+      }
+    }
+    .table-body {
+      width: 100%;
+    }
+  }
+}

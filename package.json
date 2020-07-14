@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "dayjs": "^1.8.24",
-    "husky": "^4.2.2"
+    "husky": "^4.2.2",
+    "tslint": "^6.1.2"
   }
 }

@@ -1,0 +1,44 @@
+.member-activity-bg {
+  height: 655px;
+  background: url("@{resourceHost}/resource/vip/pic_activity_bg.png") center center / cover no-repeat #F86D1E;
+  >.countdown-title{
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-100%);
+    width: 400px;
+    height: 194px;
+    background: url("@{resourceHost}/resource/vip/pic_title.png") center top / contain no-repeat;
+    >.day{
+      position: absolute;
+      top: 73px;
+      left: 274px;
+      line-height:34px;
+      font-size:24px;
+      font-weight:500;
+      color:rgba(255,255,255,0.5);
+    }
+    >.time{
+      position: absolute;
+      top: 117px;
+      left: -5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 271px;
+      height: 93px;
+      background: url("@{resourceHost}/resource/vip/pic_remain_time.png") center center / contain no-repeat;
+      color: #FF6914;
+      &>i {
+        font-size: 33px;
+        margin: 0 -3px;
+      }
+      &>i:nth-child(3),
+      &>i:nth-child(6) {
+        font-size: 13px;
+        margin: 0 3px;
+      }
+    }
+  }
+}

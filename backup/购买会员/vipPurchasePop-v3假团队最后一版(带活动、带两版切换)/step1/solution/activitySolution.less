@@ -1,0 +1,139 @@
+@import '~@src/styles/global.less';
+
+.card {
+  box-sizing: border-box;
+  position: relative;
+  width: 310px;
+  height: 230px;
+  border-radius: 6px;
+  box-shadow:5px 5px 24px 0px rgba(243,120,48,1);
+  color: #fff;
+
+  & + & {
+    margin-left: 63px;
+  }
+
+  &[data-is-group="false"]{
+    background:linear-gradient(139deg,rgba(74,202,255,1) 0%,rgba(1,145,243,1) 100%);
+
+    .buy-btn{
+      color: #05ACF3;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .conner{
+      background-color: #56E1FF;
+    }
+  }
+  &[data-is-group="true"]{
+    background:linear-gradient(140deg,rgba(253,222,123,1) 0%,rgba(253,173,3,1) 100%);
+
+    .buy-btn{
+      color: #D48800;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .conner{
+      background-color: #F87221;
+    }
+  }
+
+  // 个人/团购标题
+  div.title{
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    & > i {
+      font-size: 30px !important;
+      color: #fff;
+    }
+  }
+
+  // 角标
+  .conner{
+    border-radius:0 1px 0 3px;
+  }
+
+  // 价格行
+  .main{
+    margin-top: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .price-bar {
+      line-height: 1;
+      font-size: 24px;
+      font-weight: bold;
+      >em {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+
+    .delete-price-bar{
+      margin-left: 8px;
+      position: relative;
+      top: 8px;
+      text-decoration: line-through;
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+
+  .buy-btn{
+    margin: 20px auto 0;
+    border-radius: 34px;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    > i{
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+
+  // 最后一行说明
+  >p.note{
+    margin-top: 9px;
+    text-align: center !important;
+    font-size: 14px;
+  }
+
+  // 悬浮框
+  .tip{
+    margin-top: -15px;
+    z-index: 2;
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    background-color: #fff;
+    width: 450px;
+    border-radius: 4px;
+    padding: 20px 16px 24px;
+    color: @font-color-primary;
+    .box-shadow();
+    > h6{
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 11px;
+    }
+    > p{
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

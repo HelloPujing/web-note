@@ -1,0 +1,57 @@
+@import "~@src/styles/global";
+
+.pay-pop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 999;
+  .icon-font-close{
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    right: 56px;
+    color: #B2C0C8;
+    cursor: pointer;
+    &:hover{
+      color: #B2C0C8;
+    }
+  }
+  .pay-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F6F6F6;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.leave-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 435px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  color: @font-color-primary;
+  > i{
+    width: 180px;
+    height: 140px;
+    background: url("@{resourceHost}/resource/vip/img_sad.jpg") center center / cover no-repeat;
+  }
+  > h6{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  > p{
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}

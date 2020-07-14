@@ -1,0 +1,28 @@
+@import '~@src/styles/global.less';
+
+.title-bar{
+  display: flex;
+  align-items: center;
+  >i {
+    width: 36px;
+    height: 36px;
+    background: url(~@src/images/2.x/btn_icon_pay_code_success.png) center center / contain  no-repeat;
+  }
+  >h2 {
+    margin-left: 12px;
+    color: @font-color-primary;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  >span {
+    margin-left: 10px;
+    color: @font-color-focus;
+    font-weight: bold;
+    font-size: 24px;
+    &:before{
+      content: '￥';
+      font-size: 16px;
+    }
+  }
+}

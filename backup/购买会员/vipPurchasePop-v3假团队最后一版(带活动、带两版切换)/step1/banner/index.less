@@ -1,0 +1,13 @@
+@import '~@src/styles/global.less';
+
+.banner {
+  background: url("@{resourceHost}/resource/vip/banner_s.png") center center / cover no-repeat @global-bg-color;
+  &:before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: calc((340 / 2560) * 100%);
+  }
+}
+
+

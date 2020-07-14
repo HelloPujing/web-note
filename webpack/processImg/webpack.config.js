@@ -48,6 +48,17 @@ module.exports = {
           {loader: 'less-loader'}
         ]
       },
+      {
+        test: /\.(png|jpg|svg)$/i,
+        use: [
+          {loader: 'url-loader',
+            options: {
+              limit: 200000,
+              name: 'img/[name]-[hash:5].[ext]'
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [

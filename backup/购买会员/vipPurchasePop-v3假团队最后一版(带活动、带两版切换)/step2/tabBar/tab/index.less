@@ -1,0 +1,52 @@
+.vip-solution-tab {
+  position: relative;
+  display: inline-block;
+  width: 94px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+
+  & + & {
+    margin-left: 16px;
+  }
+
+  // 非选中
+  color: #7D8E98;
+  border: 1px solid #7D8E98;
+
+  // 9c6042
+
+  // 悬浮 选中， （色值为个人版色值）
+  &:hover,
+  &.selected {
+    cursor: pointer;
+    background-color: #9c6042;
+    color: #fff;
+    border: 1px solid #9c6042;
+  }
+
+  // 团队版色值
+  &.isGroup:hover,
+  &.isGroup.selected
+  {
+    background-color: #7F5F36;
+    border: 1px solid #7F5F36;
+  }
+
+  &.selected:hover {
+    cursor: default;
+    //&:before {
+    //  content: '';
+    //  position: absolute;
+    //  top: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  left: 0;
+    //  background: rgba(0, 0, 0, 0.15);
+    //}
+  }
+}

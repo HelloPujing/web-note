@@ -1,0 +1,87 @@
+@import '~@src/styles/global.less';
+
+.ali-wechat-pay {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+
+  section.channels {
+    margin-left: 12px;
+    > h6 {
+      margin-top: 8px;
+      color: @font-color-secondary;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    // 支付宝、微信支付
+    .wechat-pay-btn, .ali-pay-btn {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
+      width: 176px;
+      height: 44px;
+      border-radius: 4px;
+      border: 1px solid #DEE4E7;
+      color: @font-color-primary;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
+      &.active{
+        border: 2px solid @font-color-focus;
+        &:after{
+          position: absolute;
+          right: -1px;
+          bottom: -1px;
+          content: '';
+          width: 18px;
+          height: 18px;
+          background: url(~@src/images/2.x/icon_confirmorder_selected.png) center center/ contain no-repeat;;
+        }
+      }
+
+      i{
+        margin-left: 34px;
+      }
+
+      p {
+        margin-left: 14px;
+      }
+    }
+
+    .ali-pay-btn {
+      margin-top: 16px;
+      i {
+        color: @font-color-focus;
+      }
+    }
+
+    .wechat-pay-btn {
+      margin-top: 12px;
+      i {
+        color: #0CBB09;
+      }
+    }
+  }
+
+  // 二维码
+  section.two-dimension-code {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #DEE4E7;
+
+    .code {
+      width: 160px;
+      height: 160px;
+    }
+  }
+}
